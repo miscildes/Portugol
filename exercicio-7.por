@@ -4,24 +4,22 @@ programa
 	funcao inicio()
 	{
 
-		inteiro numero, par, impar
+		inteiro base, altura, area=0
+
 		
-		escreva("Escolha um número: ")
-		leia(numero)
+		escreva("Qual o valor da base do triângulo? ")
+		leia(base)
 
-		se (numero > 0) {
-			escreva("\nEsse número é positivo")
-		}
-		senao {
-			escreva("\nEsse número é negativo")
-		}
+		escreva("Qual o valor da altura do triângulo? ")
+		leia(altura)
 
-		se ( numero % 2 == 0){
-			escreva("\nEsse número é par")
-		}
-		senao {
-			escreva("\nEsse número é impar")
+		se (base > 0 e altura > 0) {
+			area = base * altura
+			escreva("\nA área do Triangulo é: " + area)
 			
+		}
+		senao {
+			escreva("\nNão é possivel calcular a área do triangulo")
 		}
 	}
 }
@@ -30,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 349; 
+ * @POSICAO-CURSOR = 305; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

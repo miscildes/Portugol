@@ -3,21 +3,23 @@ programa
 	
 	funcao inicio()
 	{
-		real idade, meses, dias
+
+		real peso, excesso, multa = 0.0
 		
-		escreva("Qual a sua idade? ")
-		leia(idade)
+		escreva("Qual o peso dos tomates?(Kg) ")
+		leia(peso)
 
-		escreva("Qual a sua idade em meses? ")
-		leia(meses)
+		excesso = (peso - 50) 
+		escreva("\nO valor do peso em excesso é de: (Kg) " + excesso)
 
-		escreva("Qual a sua idade em dias? ")
-		leia(dias)
+		se (excesso > 0) {
+			multa = excesso * 4
+			escreva("\nO valor da multa é de R$ " + multa + " reais")
+		}
 
-		limpa()
-
-		escreva("\nSua idade em dias é de: " + dias)
 		
+				
+	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -25,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 282; 
+ * @POSICAO-CURSOR = 59; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

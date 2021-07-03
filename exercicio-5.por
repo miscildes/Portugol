@@ -3,21 +3,30 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro nota1, nota2, nota3, media
+		real nivelPoluicao
 
 		
-		escreva("Qual a primeira nota do aluno? ")
-		leia(nota1)
+		escreva("Qual o nível de poluição atual? ")
+		leia(nivelPoluicao)
 
-		escreva("Qual a segunda nota do aluno? ")
-		leia(nota2)
+		se (nivelPoluicao <= 0.25) {
+			escreva("\nEsse é um limite de poluição aceitável")
+		}
 
-		escreva("Qual a terceira nota do aluno? ")
-		leia(nota3)
+		senao se (nivelPoluicao > 0.25 e nivelPoluicao <= 0.30) {
+			escreva("\nPrimeiro grupo suspenda sus atividades")
+			
+		}
 
-		media = (nota1 + nota2 + nota3) / 3
+		senao se (nivelPoluicao > 0.30 e nivelPoluicao <= 0.40) {
+			escreva("\nPrimeiro e segundo grupo suspendam suas atividades")
+			
+		}
 
-		escreva("\nA média das notas do aluno é: " + media)
+		senao se (nivelPoluicao > 0.40 e nivelPoluicao <= 0.50) {
+			escreva("\nTodos os grupos devem parar suas atividades")
+		}
+
 		
 	}
 }
@@ -26,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 354; 
+ * @POSICAO-CURSOR = 603; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

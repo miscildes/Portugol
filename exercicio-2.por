@@ -4,25 +4,40 @@ programa
 	funcao inicio()
 	{
 
-		real idade, meses, dias 
-
+		inteiro codigoFunc, horaTrab, salario, horaExc
 		
-		escreva("Você tem quantos dias de vida? ")
-		leia(dias)
+		escreva("Qual o código do funcionário? ")
+		leia(codigoFunc)
 
-		idade = (dias / 365) / 12 
-		meses = dias / 30
+		escreva("Quantas horas foram trabalhadas no mês? ")
+		leia(horaTrab)
 
-		escreva("\nSua idade em anos é de " + idade)
-		escreva("\nSua idade em meses é de " + meses)
+		se (horaTrab <= 50) {
+			salario = horaTrab * 10
+			escreva("\nO salário do funcionário é de R$ " + salario + " reais")
+
+		}
+		senao se (horaTrab > 50 ) {
+			
+			horaExc = horaTrab - 50
+			escreva("\n O número de horas excedentes foram de " + horaExc)
+
+			salario = 500 + (horaExc * 20)
+			escreva("\n O salário do funcionários com as horas excedentes é de R$ " + salario + " reais")
+
+		}
+
+	
+			
+	
+		}
 	}
-}
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 274; 
+ * @POSICAO-CURSOR = 515; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
