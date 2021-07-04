@@ -4,22 +4,19 @@ programa
 	funcao inicio()
 	{
 
-		real peso, excesso, multa = 0.0
+		inteiro contador, numero
 		
-		escreva("Qual o peso dos tomates?(Kg) ")
-		leia(peso)
+		para (contador = 0; contador < 500; contador+=3) {
+			
+			escreva("\nDigite um número: ")
+			leia(numero)
 
-		excesso = (peso - 50) 
-		escreva("\nO valor do peso em excesso é de: (Kg) " + excesso)
+			contador = (contador + numero)
 
-		se (excesso > 0) {
-			multa = excesso * 4
-			escreva("\nO valor da multa é de R$ " + multa + " reais")
+		
+		limpa()
+		escreva("\nA soma é: " + contador)
 		}
-
-		
-				
-	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 59; 
+ * @POSICAO-CURSOR = 176; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
